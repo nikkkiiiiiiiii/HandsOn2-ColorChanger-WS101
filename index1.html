@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/free-vector/gradient-technology-futuristic-background_23-2149112202.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            height: 90vh;
+            padding-top: 100px;
+            color: aliceblue;
+        }
+        #kulay {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            border-radius: 150px;
+            margin-left: 650px;
+        }
+        button {
+            height: 50px;
+            width: 100px;
+            background-color: black;
+            font-weight: bolder;
+            font-size: 18px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1  style="font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif;">JavaScript colorChanger() Hands-on.</h1>
+    <div id="kulay"></div><br>
+    <button id="btn">Click Me</button>
+
+    <script>
+        const kulay = document.getElementById("kulay");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener('click', changeColor);
+
+        function changeColor() {
+            if (kulay.style.backgroundColor === "green") {
+                kulay.style.backgroundColor = "blue";
+            } else {
+                kulay.style.backgroundColor = "green";
+            }
+        }
+    </script>
+</body>
+</html>
